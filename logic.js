@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   // Populate HTML
 
-  // For every number between 1 and 16
+  // For every number between 1 and 16 (you can add any number you want)
   for (i=1; i <= 16; i++) {
     // Make a row
     var newRow = $("<div>");
