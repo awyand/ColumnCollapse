@@ -33,8 +33,11 @@ $(document).ready(function() {
     // Save number of target's sibling columns to a variable
     var numberOfSiblings = $(targetParent).children(".column").length - 1;
 
+    // Calculate percentage for animation
+    var percentage = (100 / numberOfSiblings) + "%";
+
     // Set each sibling's width to (100% / numberOfSiblings)
-    siblings.css("width", `calc(100%/${numberOfSiblings})`);
+    siblings.animate({width: percentage});
     // Set each sibling's text to the new fraction
     siblings.text(`1/${numberOfSiblings}`);
 
